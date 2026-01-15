@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="ui">
+            <div id="texto">
+                <h1>Rolador de Dados</h1>
+            </div>
+            <div id="imagem">
+                <img id="dice-image" src="./img/dice.png" alt="Dado" width="300" height="300">
+            </div>
+        </div>
+        <p>Clique no botão para rolar o dado!</p>
+        <div id="funcionalidade">
+            <input type="number" id="sides-input" placeholder="Número de rolagens" min="1">
+            <button id="roll-button" onclick="rolarDado()">Rolar Dado</button>
+        </div>
+        <div id="return-resultado"><p id="p-resultado"></p><div>
+        <div id="result"></div>
+        <div id="resetar">
+        </div>
+    
+    
+    
+    </div>
+    <div id="reset"></div>
+    <script src="index.js"></script>
+</body>
+</html>

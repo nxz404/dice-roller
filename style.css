@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Lexend";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121214;
+    color: white;
+}
+#ui{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+#ui h1{
+    display: flex;
+    flex-wrap: wrap;
+    animation: anmh1 5s infinite alternate;
+}
+#ui img{
+    animation: anmimg 5s 1 alternate;
+}
+@keyframes anmimg{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.24);}
+}
+@keyframes anmh1{
+    0%{transform: translateY(0);}
+    100%{transform: translateX(10px);}
+}
+#funcionalidade{
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+#funcionalidade input{
+    width: 350px;
+    height: 36px;
+    text-align: center;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins";
+    color: black;
+}
+#funcionalide input:hover, #funcionalidade input:focus{
+    outline: 3px solid #8257E5;
+}
+#funcionalidade button{
+    width: 200px;
+    height: 36px;
+    cursor: pointer;
+    font-family: "Lexend";
+    border: none;
+    border-radius: 10px;
+    background-color: #4c00ff;
+    color: white;
+    margin-bottom: 10px;
+}
+#funcionalidade button:hover{
+    width: 200px;
+    height: 36px;
+    cursor: pointer;
+    font-family: "Lexend";
+    border: none;
+    border-radius: 10px;
+    background-color: #8257E5;
+    color: white;
+    margin-bottom: 10px;
+}
+p{
+    margin-top: 10px;
+    display: grid;
+    place-self: center;
+    animation: anmp 30s infinite alternate;
+    margin-bottom: 30px;
+}
+@keyframes anmp{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+#p-resultado{
+    font-size: 16px;
+    animation: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-height: 50vh;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto; 
+    overflow-y: auto;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 30px;
+}
+#result::-webkit-scrollbar {
+    width: 8px;
+}
+#result::-webkit-scrollbar-thumb {
+    background: #8257E5;
+    border-radius: 10px;
+}
+#result img{
+    width: 50px;
+    height: 50px;
+}
+#resetar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#btn-resetar{
+    width: 225px;
+    height: 36px;
+    font-family: "Poppins";
+    background-color: #121214;
+    border: 1px solid #cfc0f3;
+    color: #cfc0f3;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#btn-resetar:hover{
+    width: 225px;
+    height: 36px;
+    font-family: "Poppins";
+    background-color: #cfc0f3;
+    border: 1px solid #cfc0f3;
+    color: #4c00ff;
+}
+@media (max-width:768px) {
+    #ui{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    #ui img{
+        width: 250px;
+        height: 250px;
+        
+    }
+    #ui h1{
+        animation: uih1 5s infinite alternate;
+    }
+    p{
+        margin-top: -40px;
+    }
+    @keyframes uih1{
+        0%{transform: translateX(0px);}
+        100%{transform: translateY(10px);}
+    }
+    #funcionalidade{
+        margin-top: -10px;
+    }
+    #funcionalidade, #ui{
+        gap: 5px;
+    }
+    #funcionalidade input{
+        width: 80%;
+    }
+    .container{
+        margin-bottom: 200px;
+    }
+    #p-resultado{
+        margin-top: 20px;
+        margin-bottom: -5px;
+        width: 75%;
+        text-align: center;
+    }
+    #result{
+        margin-top: 15px;
+        margin-bottom: -50px;
+    }
+    #btn-resetar{
+        margin-bottom: -200px;
+    }
+    #result::-webkit-scrollbar, #result::-webkit-scrollbar-thumb{
+        display: none;
+    }
+}
